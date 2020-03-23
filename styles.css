@@ -1,0 +1,146 @@
+html {
+    background: url(https://www.propertychronicle.com/wp-content/uploads/2017/05/peopleworking_bw-e1495459941618.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+img {
+    image-rendering: pixelated;
+}
+
+.container {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-55%);
+}
+
+.timer {
+    width: 3.2em;
+    height: 1.4em;
+    color: white;
+    position: relative;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%) translateY(0%);
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 0.5rem black;
+    border: 0.4rem solid black;
+    border-radius: .5rem;
+    padding-top: 0.5em;
+    text-align: center;
+    margin: 5em 0em 1em 0em;
+    font-size: 2rem;
+    color: white;
+}
+
+.work-time-settings {
+    margin: 3em 0em 2em 0em;
+    display: grid;
+    grid-template-columns: repeat(3, 1.5em);
+    justify-content: center;
+    color: white;
+}
+
+#subtract-five, #add-five {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: .5%;
+    float: left;
+    box-shadow: -2px 2px 0 black;
+    cursor: pointer;
+}
+
+#subtract-five:hover, #add-five:hover {
+    box-shadow: -2px 2px 0 rgba(226, 13, 13, 0.5);
+}
+
+#subtract-five {
+    transform: rotate(45deg);
+}
+
+#work-time-display {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+    width: 1em;
+    height: 1em;
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 0.5rem black;
+}
+
+#add-five {
+    transform: rotate(225deg);
+}
+
+#start-btn {
+    margin: 0 auto;
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    width: 3.6em;
+    height: 1.6em;
+}
+
+#give-up-btn {
+    margin: 0 auto;
+    display: none;
+    font-size: 1.2rem;
+    padding: 0.1em 0.2em 0.1em 0.2em;
+    width: 4.6em;
+    height: 1.6em;
+}
+
+.continue-or-quit {
+    width: 20em;
+    height: 8em;
+    background-color: whitesmoke;
+    text-align: center;
+    display: none;
+    margin: 2.5em 0em;
+    position: relative;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-60%) translateY(0%);
+}
+
+#question {
+    font-size: 1.3rem;
+    padding-top: 0.8em;
+}
+
+#message {
+    font-size: 1.3rem;
+    padding-top: 0.8em;
+}
+
+#yes, #no {
+    margin: 1.8em 0.5em 1.8em 0.5em;
+    font-size: 1rem;
+    width: 4em;
+    height: 2em;
+}
+
+.quote {
+    background: rgba(0, 0, 0, 0.1);
+    text-shadow: 0 0 0.2rem black;
+    font-size: 1.1rem;
+    color: white;
+}
+
+
+
+/* .timer-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    background: #ddd;
+    border: 1px solid #999;
+    padding: 10px;
+    box-shadow: 0 0 5px 3px #ccc;
+}
+
+.info {
+    font-size: 50px;
+} */
