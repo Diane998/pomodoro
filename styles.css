@@ -8,10 +8,12 @@ img {
 }
 
 .container {
+    max-width: 600px;
+    width: 90%;
     position: absolute;
-    top: 45%;
+    margin-top: 5%;
     left: 50%;
-    transform: translateX(-50%) translateY(-55%);
+    transform: translateX(-50%);
 }
 
 .timer {
@@ -28,7 +30,7 @@ img {
     border-radius: .5rem;
     padding-top: 0.5em;
     text-align: center;
-    margin: 5em 0em 1em 0em;
+    margin: 2em 0em 1em 0em;
     font-size: 2rem;
     color: white;
 }
@@ -121,26 +123,11 @@ img {
 }
 
 .quote {
+    max-width: 100%;
+    width: 90%;
+    margin: 0% 5%;
     background: rgba(0, 0, 0, 0.1);
     text-shadow: 0 0 0.2rem black;
     font-size: 1.1rem;
     color: white;
 }
-
-
-
-/* .timer-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    text-align: center;
-    background: #ddd;
-    border: 1px solid #999;
-    padding: 10px;
-    box-shadow: 0 0 5px 3px #ccc;
-}
-
-.info {
-    font-size: 50px;
-} */

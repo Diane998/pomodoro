@@ -45,20 +45,6 @@ giveUpBtn.addEventListener("click", function() {
     yesBtn.style.display = "inline-block", noBtn.style.display = "inline-block";
     askToContinueOrQuit();
     continueOrQuit.style.margin = "1.5em";
-    // let ask = (question, yes, no) => {
-    //     (confirm(question)) ? yes() : no();
-    // }
-
-    // ask("Are you sure you want to give up?",
-    //     () => {
-    //         alert("You gave up try again.");
-    //         main();
-    //         clearInterval(interterval);
-    //         counter = 0;
-    //         timer.textContent = convertSeconds(workTime * 60 - counter);
-    //     },
-    //     () => alert("Good now focus!")
-    // );
 });
 
 
@@ -101,14 +87,6 @@ let convertSeconds = (s) => {
 timer.textContent = convertSeconds(workTime * 60 - counter);
 
 let countdown = () => {
-    // if (counter != workTime * 60) {
-    //     counter++;
-    //     timer.textContent = convertSeconds(workTime * 60 - counter);
-    // } else {
-    //     alert(`Congratulations you've focused for ${workTime} minutes.`);
-    //     clearInterval(interterval);
-    //     main();
-    // }
     (counter != workTime * 60) ? (counter++, 
         timer.textContent = convertSeconds(workTime * 60 - counter))
     :   (alert(`Congratulations you've focused for ${workTime} minutes.`),
@@ -117,20 +95,6 @@ let countdown = () => {
 };
 
 let main = (message) => {
-    // if (message) {
-    //     continueOrQuit.style.display = "block";
-    //     message.textContent = message;
-    //     question.style.display = "none";
-    //     continueOrQuit.style.height = "4em";
-    //     settings.style.display = "grid";
-    //     giveUpBtn.style.display = "none";
-    //     startBtn.style.display = "block";
-    // } else {
-    //     settings.style.display = "grid";
-    //     giveUpBtn.style.display = "none";
-    //     startBtn.style.display = "block";
-    //     continueOrQuit.style.display = "none";
-    // }
     (message) ? (continueOrQuit.style.display = "block",
         message.textContent = message, question.style.display = "none",
         continueOrQuit.style.height = "4em", settings.style.display = "grid",
@@ -138,13 +102,6 @@ let main = (message) => {
     : (settings.style.display = "grid", giveUpBtn.style.display = "none",
         startBtn.style.display = "block", ontinueOrQuit.style.display = "none");
 };
-
-// let main = () => {
-//     settings.style.display = "grid";
-//     giveUpBtn.style.display = "none";
-//     startBtn.style.display = "block";
-//     continueOrQuit.style.display = "none";
-// };
 
 let focusMode = () => {
     settings.style.display = "none";
